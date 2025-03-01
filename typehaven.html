@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="typehaven.css">
+    <title>blank</title>
+</head>
+<body>
+    <a href="index.html">
+        <button>home</button>
+    </a>
+    <button onclick="changeColor()">Change to yellow</button>
+    <button onclick="changeColor1()">Change to green</button>
+    <button onclick="changeColor2()">Change to pink</button>
+    <input type="text" id="titleInput" placeholder="title (will not work for desktop version)"/>
+    <button onclick="downloadText()">Download</button>
+    <input type="file" id="fileInput" accept=".txt">
+    <button onclick="openText()">Open</button>
+
+    <div class="main">
+    <textarea placeholder="type text here..."  onclick="init()" name="main" id="main" rows="50" cols="1000"></textarea>
+
+  
+    </div>
+    <script src="typehaven.js"></script>
+    <script src="sw.js"></script>
+</body>
+</html>
