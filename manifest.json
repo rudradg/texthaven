@@ -1,7 +1,7 @@
 {
     "name": "Texthaven",
     "short_name": "Haven",
-    "start_url": "/desktopwarning.html",
+    "start_url": "desktopwarning.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
