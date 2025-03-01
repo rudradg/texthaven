@@ -61,25 +61,3 @@ navigator.serviceWorker.register('/service-worker/sw.js').then((registration) =>
   console.log('Service Worker registration failed:', error);
 });
 
-  let installPromptEvent;
-
-window.addEventListener("beforeinstallprompt", (event) => {
-  event.preventDefault();
-  installPromptEvent = event;
-  document.getElementById("install-btn").hidden = false;
-});
-
-document.getElementById("install-btn").addEventListener("click", () => {
-  if (installPromptEvent) {
-    installPromptEvent.prompt();
-    installPromptEvent.userChoice.then((choice) => {
-      if (choice.outcome === "accepted") {
-        console.log("PWA Installed");
-      }
-      installPromptEvent = null;
-      document.getElementById("install-btn").hidden = true;
-    });
-  }
-});
-
-  
