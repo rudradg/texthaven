@@ -55,11 +55,11 @@ function openText() {
         alert("Please select a file!");
     }
 }
-if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/sw.js")
-      .then(() => console.log("Service Worker Registered"))
-      .catch((error) => console.log("Service Worker Registration Failed:", error));
-  }
+navigator.serviceWorker.register('/service-worker/sw.js').then((registration) => {
+  console.log('Service Worker registered with scope:', registration.scope);
+}).catch((error) => {
+  console.log('Service Worker registration failed:', error);
+});
 
   let installPromptEvent;
 
