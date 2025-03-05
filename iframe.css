@@ -4,3 +4,6 @@ p{
     text-align: center;
     font-family: 'roboto';
 }
+iframe{
+    display: none;
+}
