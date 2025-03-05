@@ -4,3 +4,8 @@ p{
     text-align: center;
     font-family: 'roboto';
 }
+body {
+    background: transparent;
+    color: inherit;
+    font-size: inherit;
+}
