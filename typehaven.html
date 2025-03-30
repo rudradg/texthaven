@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200 />
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="typehaven.css">
     <title>blank</title>
@@ -11,13 +12,13 @@
     <a href="index.html">
         <button>home</button>
     </a>
-    <button onclick="changeColor()">Change to yellow</button>
-    <button onclick="changeColor1()">Change to green</button>
-    <button onclick="changeColor2()">Change to pink</button>
+    <button onclick="changeColor()">Change to yellow <span class="material-symbols-outlined">palette</span></button>
+    <button onclick="changeColor1()">Change to green <span class="material-symbols-outlined">palette</span></button>
+    <button onclick="changeColor2()">Change to pink <span class="material-symbols-outlined">palette</span></button>
     <input type="text" id="titleInput" placeholder="title (will not work for desktop version)"/>
-    <button onclick="downloadText()">Download</button>
+    <button onclick="downloadText()">Download <span class="material-symbols-outlined">download</span></button>
     <input type="file" id="fileInput" accept=".txt">
-    <button onclick="openText()">Open</button>
+    <button onclick="openText()">Open <span class="material-symbols-outlined">file_open</span></button>
 
     <div class="main">
     <textarea placeholder="type text here..."  onclick="init()" name="main" id="main" rows="50" cols="1000"></textarea>
