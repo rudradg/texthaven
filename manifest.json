@@ -1,8 +1,9 @@
 {
     "name": "Texthaven",
     "short_name": "Haven",
-    "start_url": "/https://rudradg.github.io/texthaven/",
+    "start_url": "/texthaven/",
     "display": "standalone",
+    "scope": "/texthaven/",
     "background_color": "#ffffff",
     "theme_color": "#000000",
     "icons": [
