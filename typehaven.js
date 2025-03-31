@@ -65,16 +65,21 @@ if ('serviceWorker' in navigator) {
       });
   }
 
-document.getElementById('imageUpload').addEventListener('change', function(event) {
-    const textArea = document.getElementById('main'); // Target 'main' textarea
-    if (!textArea) return; 
+window.onload = function() {
+    document.getElementById('imageUpload').addEventListener('change', function(event) {
+        const textArea = document.getElementById('main'); 
+        if (!textArea) {
+            console.error("Textarea with ID 'main' not found!"); 
+            return;
+        }
 
-    const file = event.target.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            textArea.value += `![image](${e.target.result})\n`; 
-        };
-        reader.readAsDataURL(file);
-    }
-});
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                textArea.value += `![image](${e.target.result})\n`;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+};
