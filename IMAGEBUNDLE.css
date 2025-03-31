@@ -1,8 +1,20 @@
- /* Container to hold the textarea and image overlay */
+        /* Center the content in the middle of the page */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Container to hold the textarea and image overlay */
         .textarea-container {
             position: relative;
             width: 300px; /* Width of the container */
             height: 200px; /* Height of the container */
+            border: 1px solid #ccc;
+            overflow: hidden;
         }
 
         /* Textarea style */
@@ -18,7 +30,7 @@
             background: transparent;
             color: black; /* Text color */
             font-size: 16px;
-            border: 2px solid #ccc;
+            border: none;
         }
 
         /* Image overlay style */
