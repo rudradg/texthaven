@@ -70,9 +70,7 @@ document.getElementById('imageUpload').addEventListener('change', function(event
     if (file) {
         const reader = new FileReader();
         reader.onload = function(e) {
-            const img = document.getElementById('uploadedImage');
-            img.src = e.target.result;
-            img.style.display = 'block';
+            document.getElementById('textArea').value += `![image](${e.target.result})\n`;
         };
         reader.readAsDataURL(file);
     }
