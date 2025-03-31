@@ -64,23 +64,14 @@ if ('serviceWorker' in navigator) {
         console.log('Service Worker registration failed:', error);
       });
   }
-
-window.onload = function() {
-    document.getElementById('imageUpload').addEventListener('change', function(event) {
-        const textArea = document.getElementById('main');
-        if (!textArea) {
-            console.error("Textarea with ID 'main' not found!");
-            return;
-        }
-
-        const file = event.target.files[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                textArea.value += `![image](${e.target.result})\n`;
-            };
-            reader.readAsDataURL(file);
-        }
-    });
-};
+document.getElementById("fileInput").addEventListener("change", function(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            document.getElementById("preview").src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+});
 
