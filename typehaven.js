@@ -67,9 +67,9 @@ if ('serviceWorker' in navigator) {
 
 window.onload = function() {
     document.getElementById('imageUpload').addEventListener('change', function(event) {
-        const textArea = document.getElementById('main'); 
+        const textArea = document.getElementById('main');
         if (!textArea) {
-            console.error("Textarea with ID 'main' not found!"); 
+            console.error("Textarea with ID 'main' not found!");
             return;
         }
 
@@ -83,3 +83,4 @@ window.onload = function() {
         }
     });
 };
+
