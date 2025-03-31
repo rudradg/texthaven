@@ -64,25 +64,3 @@ if ('serviceWorker' in navigator) {
         console.log('Service Worker registration failed:', error);
       });
   }
- // Get the input element and the image element
-        const imageInput = document.getElementById('imageInput');
-        const overlayImage = document.getElementById('overlayImage');
-
-        // Add an event listener for when a user uploads an image
-        imageInput.addEventListener('change', function (e) {
-            const file = e.target.files[0];
-
-            if (file) {
-                const reader = new FileReader();
-
-                reader.onload = function (event) {
-                    // Set the image source to the uploaded image
-                    overlayImage.src = event.target.result;
-                    overlayImage.style.display = 'block'; // Show the image
-                };
-
-                // Read the uploaded image file as a data URL
-                reader.readAsDataURL(file);
-            }
-        });
-
