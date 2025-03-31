@@ -66,13 +66,15 @@ if ('serviceWorker' in navigator) {
   }
 
 document.getElementById('imageUpload').addEventListener('change', function(event) {
+    const textArea = document.getElementById('main'); // Target 'main' textarea
+    if (!textArea) return; 
+
     const file = event.target.files[0];
     if (file) {
         const reader = new FileReader();
         reader.onload = function(e) {
-            document.getElementById('textArea').value += `![image](${e.target.result})\n`;
+            textArea.value += `![image](${e.target.result})\n`; 
         };
         reader.readAsDataURL(file);
     }
 });
-  
