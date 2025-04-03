@@ -6,13 +6,27 @@ textarea{
     color: rgb(0, 0, 0);
 }
 body{
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: start;
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
     
 }
 input {
 border-radius: 20px;
+}
+:root {
+    --bg-color: white;
+    --text-color: black;
+}
+
+.dark-mode {
+    --bg-color: black;
+    --text-color: white;
+}
+button {
+    cursor: pointer;
 }

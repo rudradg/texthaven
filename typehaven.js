@@ -64,3 +64,22 @@ if ('serviceWorker' in navigator) {
         console.log('Service Worker registration failed:', error);
       });
   }
+
+  const toggleButton = document.getElementById("theme-toggle");
+const body = document.body;
+
+
+if (localStorage.getItem("site-theme") === "dark") {
+    body.classList.add("dark-mode");
+}
+
+toggleButton.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    
+    
+    if (body.classList.contains("dark-mode")) {
+        localStorage.setItem("site-theme", "dark");
+    } else {
+        localStorage.setItem("site-theme", "light");
+    }
+});

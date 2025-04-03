@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 body{
-    background-color: white;
+    background-color: rgb(1, 0, 0);
 } 
 h1{ 
     color: white; text-align: center; font-family: 'roboto';
@@ -8,7 +8,7 @@ h1{
 button{  
     border-radius: 5px; background-color: lime;
     height: 5em;
-    color: black;
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
  .button{
