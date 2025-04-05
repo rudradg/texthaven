@@ -1,32 +1,37 @@
-.main{
-    text-align: center;
+:root {
+    --bg-color: white;
+    --text-color: black;
 }
-textarea{
-    background-color: black;
-    color: white;
-}
-body{
-    background-color: rgb(0, 0, 0);
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: start;
-    color: var(--text-color);
     transition: background 0.3s, color 0.3s;
-    
 }
+
+textarea {
+    background-color: black;
+    color: white;
+}
+
 input {
-border-radius: 20px;
+    border-radius: 20px;
 }
-:root {
-    --bg-color: white;
-    --text-color: black;
+
+button {
+    cursor: pointer;
 }
 
 .dark-mode {
     --bg-color: black;
     --text-color: white;
 }
-button {
-    cursor: pointer;
+
+.main {
+    text-align: center;
 }
+
