@@ -1,16 +1,7 @@
-:root {
-    --bg-color: white;
-    --text-color: black;
-}
+
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    transition: background 0.3s, color 0.3s;
+    background-color: black;
 }
 
 textarea {
@@ -19,19 +10,9 @@ textarea {
 }
 
 input {
-    border-radius: 20px;
 }
 
 button {
     cursor: pointer;
-}
-
-.dark-mode {
-    --bg-color: black;
-    --text-color: white;
-}
-
-.main {
-    text-align: center;
 }
 

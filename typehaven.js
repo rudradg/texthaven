@@ -65,34 +65,3 @@ if ('serviceWorker' in navigator) {
       });
   }
 
-  const toggleButton = document.getElementById("theme-toggle");
-const body = document.body;
-
-// Helper function to ensure safe values
-function safeTheme(value) {
-    return value === 'dark' || value === 'light' ? value : 'light'; // Default to 'light' if invalid value is found
-}
-
-// Check if the theme is stored and valid
-const storedTheme = localStorage.getItem("site-theme");
-if (storedTheme) {
-    const validTheme = safeTheme(storedTheme); // Validate the stored value
-    if (validTheme === "dark") {
-        body.classList.add("dark-mode");
-    }
-}
-
-// Toggle button event listener
-toggleButton.addEventListener("click", () => {
-    // Toggle dark mode class
-    body.classList.toggle("dark-mode");
-
-    // Save the selected theme in localStorage safely
-    if (body.classList.contains("dark-mode")) {
-        localStorage.setItem("site-theme", "dark");
-    } else {
-        localStorage.setItem("site-theme", "light");
-    }
-});
-
-
