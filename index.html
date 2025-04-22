@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Verify Human</title>
-  <script src="https://www.google.com/recaptcha/api.js?render=6LfeCSArAAAAAILqHvUE8b8z0sBGoe0-w4ZSnjk1"></script>
-</head>
-<body>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-<img src="nobotsfortypehaven.jpeg">
-
-<form id="verifyForm" onsubmit="return handleHuman();">
+<form onsubmit="return handleHuman();">
   <div class="g-recaptcha" data-sitekey="6LfeCSArAAAAAILqHvUE8b8z0sBGoe0-w4ZSnjk1"></div>
   <button type="submit">Verify</button>
 </form>
@@ -17,16 +8,12 @@
 <script>
 function handleHuman() {
   var response = grecaptcha.getResponse();
-  if(response.length == 0) {
+  if(response.length === 0) {
     alert("Please complete the human check!");
     return false;
   } else {
-    // Redirect after passing the human check
-    window.location.href = "rudradg.github.io/texthaven/main/";  
+    window.location.href = "https://your-site.com";
     return false;
   }
 }
 </script>
-
-</body>
-</html>
