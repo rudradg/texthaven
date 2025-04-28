@@ -36,6 +36,19 @@ function changeColor3() {
     main.style.color = "orange";
 }
 
+function changeColor3() {
+    let main = document.getElementById("main");
+    main.style.color = "orange";
+}
+
+function changeColor6() {
+    let main = document.getElementById("main");
+    main.style.color = "#39ff14";
+    main.style.textShadow = "0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14";
+
+}
+
+
 function changeColor4() {
     let main = document.getElementById("main");
     main.style.color = "blue";
