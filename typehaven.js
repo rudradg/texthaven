@@ -31,6 +31,22 @@ function changeColor2() {
     main.style.color = "pink";
 }
 
+function changeColor3() {
+    let main = document.getElementById("main");
+    main.style.color = "orange";
+}
+
+function changeColor4() {
+    let main = document.getElementById("main");
+    main.style.color = "blue";
+}
+
+function changeColor5() {
+    let main = document.getElementById("main");
+    main.style.color = "purple";
+}
+
+
 
 function downloadText() {
     let text = document.getElementById("main").value;
