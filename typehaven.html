@@ -26,6 +26,25 @@
     <input type="file" id="fileInput" accept=".txt">
     <button onclick="openText()">Open <span class="material-symbols-outlined">file_open</span></button>
     <button id="theme-toggle">Toggle Theme <span class="material-symbols-outlined">light_mode</span> <span class="material-symbols-outlined">dark_mode</span></button>
+    <select id="symbolPicker">
+        <option value="\u270E">✎ Pencil</option>
+        <option value="\u2709">✉ Envelope</option>
+        <option value="\u2699">⚙ Gear</option>
+        <option value="\u2611">☑ Checked Box</option>
+        <option value="\u2610">☐ Empty Box</option>
+        <option value="\u260E">☎ Phone</option>
+        <option value="\u231B">⌛ Hourglass</option>
+        <option value="\u2630">☰ Menu</option>
+        <option value="\u2328">⌨ Keyboard</option>
+        <option value="\u2726">✦ Star</option>
+        <option value="\u2191">↑ Arrow Up</option>
+        <option value="\u2193">↓ Arrow Down</option>
+        <option value="\u2190">← Arrow Left</option>
+        <option value="\u2192">→ Arrow Right</option>
+      </select>
+      
+      <button onclick="insertSymbol()">Insert Symbol</button>
+      
     <div class="main">
     <textarea placeholder="type text here..."  onclick="init()" name="main" id="main" rows="50" cols="500"></textarea>
 

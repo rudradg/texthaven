@@ -94,3 +94,19 @@ if ('serviceWorker' in navigator) {
       });
   }
 
+  function insertSymbol() {
+    const textarea = document.getElementById("myTextarea");
+    const select = document.getElementById("symbolPicker");
+    const unicode = select.value;
+
+    const symbol = eval(`"${unicode}"`);
+
+    const start = textarea.selectionStart;
+    const end = textarea.selectionEnd;
+    const text = textarea.value;
+
+    textarea.value = text.slice(0, start) + symbol + text.slice(end);
+    textarea.selectionStart = textarea.selectionEnd = start + symbol.length;
+    textarea.focus();
+  }
+
