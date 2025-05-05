@@ -95,7 +95,7 @@ if ('serviceWorker' in navigator) {
   }
 
   function insertSymbol() {
-    const textarea = document.getElementById("myTextarea");
+    const textarea = document.getElementById("main");
     const select = document.getElementById("symbolPicker");
     const unicode = select.value;
 
