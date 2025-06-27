@@ -107,4 +107,8 @@ const inputBox = document.getElementById('titleInput');
      textarea.selectionStart = textarea.selectionEnd = start + symbol.length;
      textarea.focus();
    }
+   function cm(){
+    localStorage.clear();
+    alert("successfully cleared memory!")
+   }
  
